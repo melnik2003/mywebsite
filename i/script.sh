@@ -7,8 +7,8 @@ cd ..
 current_time=$(date +"%Y-%m-%d %H-%M-%S") 
 log_file='conversion-log.txt'
 
-echo -n "Создание архива исходных файлов $current_time">> $log_file
-echo -n "Начало обработки файлов $current_time">>$log_file 
+echo -n "Создание архива исходных файлов $current_time" > $log_file
+echo -n "Начало обработки файлов $current_time" >> $log_file 
 
 cd PhotoIn || exit
 
