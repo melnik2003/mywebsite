@@ -12,8 +12,9 @@ echo -n "Начало обработки файлов $current_time" >> $log_fil
 
 for f in PhotoOut/*.jpg
 do
-    convert-im6.q16 -debug all "PhotoIn/$f PhotoOut/$f.png" 2 >> log_file
-    mogrify-im6.q16 -debug all -quality 96 "PhotoOut/$f.png" 2 >> log_file
+    filename=$(basename "$f")
+    convert-im6.q16 -debug all "PhotoIn/$filename" "PhotoOut/${filename%.*}.png" 2>> log_file
+    mogrify-im6.q16 -debug all -quality 96 "PhotoOut/${filename%.*}.png" 2>> log_file
 done
 
 #for f in *.jpg; do
