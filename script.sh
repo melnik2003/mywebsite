@@ -12,7 +12,7 @@ echo -n "Начало обработки файлов $current_time">>$log_file
 
 cd PhotoIn || exit
 
-for f in *.jpeg;do
+for f in *.jpg; do
   filename="../PhotoOut/new_$f"
   if convert "$f" -resize 30% "$filename";then
     echo "файл $f успешно обработан $current_time. Новоe имя файла $filename" >> ../"$log_file";

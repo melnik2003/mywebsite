@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetchAndPopulateImages('i/PhotoOut');
+    fetchAndPopulateImages('i/PhotoIn');
 });
 
 function fetchAndPopulateImages(folderPath) {
