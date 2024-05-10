@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.profile-photo {
+    width: 250px;
+    border-radius: 15%;
+    margin-top: 30px;
+    border: 3px solid white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 10px 0 5px; /* Increase space above and below */
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0 0; /* Increase space below */
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 24px;
+    margin: 0 0 20px; /* Increase space below */
+}
+
+section#contact ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section#contact ul li a:hover {
+    color: #aaa;
+}
+
+section.lr ul li a {
+    color: #fff;
+}
+
+section#gallery {
+    padding: 40px 0;
+}
+
+.photo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+    border-radius: 5px; /* Add some border radius for style */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.multiline-text {
+    white-space: pre-line;
+}
