@@ -10,6 +10,21 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 .container {
@@ -41,12 +56,20 @@ header p {
 }
 
 section {
-    padding: 40px 0;
+    padding: 10px 0;
+}
+
+section p {
+    margin: 0 0 10px;
 }
 
 section h2 {
     font-size: 24px;
-    margin: 0 0 20px; /* Increase space below */
+    margin: 0 0 20px;
+}
+
+section#skills ul li {
+    list-style-type: disc;
 }
 
 section#contact ul li a {
@@ -78,15 +101,6 @@ section#gallery {
     border-radius: 5px; /* Add some border radius for style */
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
 footer {
     background-color: #000000;
     text-align: center;
@@ -112,5 +126,5 @@ footer ul li a:hover {
 }
 
 .multiline-text {
-    white-space: pre-line;
+
 }
