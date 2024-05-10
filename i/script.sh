@@ -3,6 +3,7 @@
 cd PhotoIn || exit 1
 zip PhotoArh.zip *
 cd ..
+mv i/PhotoArh.zip PhotoArh.zip
 
 current_time=$(date +"%Y-%m-%d %H-%M-%S") 
 log_file='conversion-log.txt'
@@ -13,8 +14,8 @@ echo -n "Начало обработки файлов $current_time" >> $log_fil
 for f in PhotoOut/*.jpg
 do
     filename=$(basename "$f")
-    convert-im6.q16 -debug all "PhotoIn/$filename" "PhotoOut/${filename%.*}.png" 2>> log_file
-    mogrify-im6.q16 -debug all -quality 96 "PhotoOut/${filename%.*}.png" 2>> log_file
+    convert-im6.q16 -debug all "PhotoIn/$filename" "PhotoOut/${filename%.*}.png" 2>> $log_file
+    mogrify-im6.q16 -debug all -quality 96 "PhotoOut/${filename%.*}.png" 2>> $log_file
 done
 
 #for f in *.jpg; do
