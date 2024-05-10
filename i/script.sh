@@ -10,8 +10,6 @@ log_file='conversion-log.txt'
 echo -n "Создание архива исходных файлов $current_time" > $log_file
 echo -n "Начало обработки файлов $current_time" >> $log_file 
 
-cd PhotoIn || exit 1
-
 for f in PhotoOut/*.jpg
 do
     convert-im6.q16 -debug all "PhotoIn/$f PhotoOut/$f.png" 2 >> log_file
