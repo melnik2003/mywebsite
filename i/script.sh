@@ -3,7 +3,7 @@
 cd PhotoIn || exit 1
 zip PhotoArh.zip *
 cd ..
-mv i/PhotoArh.zip PhotoArh.zip
+mv PhotoIn/PhotoArh.zip PhotoArh.zip
 
 current_time=$(date +"%Y-%m-%d %H-%M-%S") 
 log_file='conversion-log.txt'
