@@ -18,6 +18,8 @@ echo -n "Начало обработки файлов $current_time" >> $log_fil
 #    mogrify-im6.q16 -debug all -quality 96 "PhotoOut/${filename%.*}.png" 2>> $log_file
 #done
 
+cd PhotoIn || exit 1
+
 for f in *.jpg; do
     filename="../PhotoOut/new_$f"
     if convert "$f" -resize 30% "$filename";then
