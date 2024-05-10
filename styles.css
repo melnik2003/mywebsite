@@ -86,9 +86,13 @@ section.lr ul li a {
     color: #fff;
 }
 
+#imageTable {
+    margin: 0 auto;
+  }
+
 #imageTable img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
 }
 
 .photo {
