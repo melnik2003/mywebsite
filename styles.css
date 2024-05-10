@@ -94,6 +94,7 @@ section.lr ul li a {
     width: 150px;
     height: auto;
     border: 3px solid white;
+    border-radius: 10%;
 }
 
 .photo {
