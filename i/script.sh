@@ -11,18 +11,18 @@ log_file='conversion-log.txt'
 echo -n "Создание архива исходных файлов $current_time" > $log_file
 echo -n "Начало обработки файлов $current_time" >> $log_file 
 
-for f in PhotoOut/*.jpg
-do
-    filename=$(basename "$f")
-    convert-im6.q16 -debug all "PhotoIn/$filename" "PhotoOut/${filename%.*}.png" 2>> $log_file
-    mogrify-im6.q16 -debug all -quality 96 "PhotoOut/${filename%.*}.png" 2>> $log_file
-done
-
-#for f in *.jpg; do
-#    filename="../PhotoOut/new_$f"
-#    if convert "$f" -resize 30% "$filename";then
-#        echo "файл $f успешно обработан $current_time. Новоe имя файла $filename" >> ../"$log_file";
-#    else
-#        echo "ошибка конвертации файла $f $current_time"  >> ../"$log_file";
-#    fi 
+#for f in PhotoOut/*.jpg
+#do
+#    filename=$(basename "$f")
+#    convert-im6.q16 -debug all "PhotoIn/$filename" "PhotoOut/${filename%.*}.png" 2>> $log_file
+#    mogrify-im6.q16 -debug all -quality 96 "PhotoOut/${filename%.*}.png" 2>> $log_file
 #done
+
+for f in *.jpg; do
+    filename="../PhotoOut/new_$f"
+    if convert "$f" -resize 30% "$filename";then
+        echo "файл $f успешно обработан $current_time. Новоe имя файла $filename" >> ../"$log_file";
+    else
+        echo "ошибка конвертации файла $f $current_time"  >> ../"$log_file";
+    fi 
+done
