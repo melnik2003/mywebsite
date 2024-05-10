@@ -93,6 +93,7 @@ section.lr ul li a {
 #imageTable img {
     width: 150px;
     height: auto;
+    border: 2px solid white;
 }
 
 .photo {
